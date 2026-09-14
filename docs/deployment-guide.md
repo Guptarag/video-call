@@ -78,7 +78,7 @@ Render provides free persistent Web Services with native WebSocket (`wss://`) su
    - **Runtime**: `Node`
    - **Build Command**:
      ```bash
-     pnpm install --frozen-lockfile && pnpm --filter @pvc/protocol build && pnpm --filter @pvc/signaling build
+     pnpm install --prod=false && pnpm run build:signaling
      ```
    - **Start Command**:
      ```bash
